@@ -1,6 +1,11 @@
-function OpeningCrawl () {
+import Greeting from './Greeting.jsx'
 
+function OpeningCrawl () {
+const text = '"I swear by my pretty floral bonnet, I will end you."'
     return (
+//need a parent container/element
+      <> 
+      <Greeting text={text}/>
         <>
         <div id="header">
   <h1> Welcome to the not-so-distant future.... </h1>
@@ -16,6 +21,7 @@ function OpeningCrawl () {
 <div id="summary">
   <h1> I hope you enjoy the game! </h1>
 </div>
+</>
 </>
     )
 }
